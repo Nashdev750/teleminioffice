@@ -1,0 +1,78 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react-hooks/recommended",
+        "prettier"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": [
+                    "node_modules",
+                    "src/"
+                ]
+            }
+        }
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "impliedStrict": true
+        },
+        "ecmaVersion": 12
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "prettier"
+    ],
+    "rules": {
+        "jsx-a11y/no-autofocus": [
+            2,
+            {
+                "ignoreNonDOM": true
+            }
+        ], 
+        "react/jsx-filename-extension": "off",
+        "no-param-reassign": "off",
+        "react/prop-types": "off",
+        "react/require-default-props": "off",
+        "react/no-array-index-key": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/forbid-prop-types": "off",
+        "import/order": "off",
+        "import/no-cycle": "off",
+        "no-console": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "prefer-destructuring": "off",
+        "no-shadow": "off",
+        "import/prefer-default-export": "off",
+        "react/no-unstable-nested-components": "off",
+        "prefer-regex-literals": "off",
+        "no-promise-executor-return": "off",
+        "no-unsafe-optional-chaining": "off",
+        "react/jsx-no-constructed-context-values": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "react/function-component-definition": "off",
+        "react/react-in-jsx-scope": "off",
+        "import/no-named-as-default": "off",
+        "no-plusplus": "off",
+        "arrow-body-style": "off",
+        "no-underscore-dangle": 0,
+        "object-shorthand": 0,
+        "no-unused-vars": [
+            1,
+            {
+                "ignoreRestSiblings": false
+            }
+        ],
+        "prettier/prettier": "off"
+    }
+}

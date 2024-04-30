@@ -1,0 +1,18 @@
+{
+    "inputData": "Input Data",
+    "menu": "Menu",
+    "addMenu": "Add Menu",
+    "viewMenu": "View Menu",
+    "schools": "School",
+    "addSchool": "Add School",
+    "viewSchool": "View Schools",
+    "trucks": "Trucks",
+    "addTruck": "Add Truck",
+    "viewTrucks": "View Trucks",
+    "monthly-order-list": "Order List",
+    "school-Calender": "School Calendar",
+    "viewCalendar": "View Calendar", 
+    "delivery-management": "Delivery Management",
+    "stock-level": "Stock Level", 
+    "warehouse":"Warehouse"
+}
