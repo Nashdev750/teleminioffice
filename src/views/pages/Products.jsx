@@ -270,7 +270,7 @@ export default function Products() {
                                         selected={isItemSelected}
                                     >
                                         <TableCell sx={{ px: 3 }} padding="checkbox">
-                                           <img style={{height:"60px",width:"60px",objectFit:"cover",objectPosition:"center"}} src={`http://localhost:4000/public/${row.image}`} alt="product"/>
+                                           <img style={{height:"60px",width:"60px",objectFit:"cover",objectPosition:"center"}} src={`https://ac9789.store/api/public/${row.image}`} alt="product"/>
                                         </TableCell>
                                         <TableCell component="th" id={labelId} scope="row" padding="none">
                                             {row.name}
