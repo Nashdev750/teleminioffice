@@ -62,7 +62,7 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 
 // ===========================|| DASHBOARD DEFAULT - EARNING CARD ||=========================== //
 
-const EarningCard = ({ isLoading }) => {
+const EarningCard = ({ isLoading, order, title }) => {
     const theme = useTheme();
 
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -133,16 +133,7 @@ const EarningCard = ({ isLoading }) => {
                                             }}
                                         >
                                             <MenuItem onClick={handleClose}>
-                                                <GetAppTwoToneIcon sx={{ mr: 1.75 }} /> Import Card
-                                            </MenuItem>
-                                            <MenuItem onClick={handleClose}>
-                                                <FileCopyTwoToneIcon sx={{ mr: 1.75 }} /> Copy Data
-                                            </MenuItem>
-                                            <MenuItem onClick={handleClose}>
-                                                <PictureAsPdfTwoToneIcon sx={{ mr: 1.75 }} /> Export
-                                            </MenuItem>
-                                            <MenuItem onClick={handleClose}>
-                                                <ArchiveTwoToneIcon sx={{ mr: 1.75 }} /> Archive File
+                                                <GetAppTwoToneIcon sx={{ mr: 1.75 }} /> 
                                             </MenuItem>
                                         </Menu>
                                     </Grid>
@@ -152,7 +143,7 @@ const EarningCard = ({ isLoading }) => {
                                 <Grid container alignItems="center">
                                     <Grid item>
                                         <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>
-                                            $500.00
+                                            ${order?.toFixed(2)}
                                         </Typography>
                                     </Grid>
                                     <Grid item>
@@ -177,7 +168,7 @@ const EarningCard = ({ isLoading }) => {
                                         color: theme.palette.mode === 'dark' ? theme.palette.text.secondary : theme.palette.secondary[200]
                                     }}
                                 >
-                                    Total Earning
+                                    {title}
                                 </Typography>
                             </Grid>
                         </Grid>
