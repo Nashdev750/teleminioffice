@@ -62,7 +62,16 @@ function calculateOrderStats(orders) {
 
 const Dashboard = () => {
     const [isLoading, setLoading] = useState(true);
-    const [order, setOrder] = useState({});
+    const [order, setOrder] = useState({
+        totalSales:0,
+        totalOrders:0,
+        totalPendingOrders:0,
+        totalPendingCost:0,
+        totalCompletedOrders:0,
+        totalCompletedCost:0,
+        totalCancelledOrders:0,
+        totalCancelledCost:0
+    });
 
     useEffect(()=>{
         httpCommom.get('orders')
